@@ -10,6 +10,7 @@ public class MainClass {
         System.setProperty("webdriver.gecko.driver", "D:\\Temp\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         driver.get("https://github.com/");
         WebElement btnSignUp = driver.findElement(By.xpath("//a[@class = 'text-bold text-white no-underline']"));
         btnSignUp.click();
